@@ -25,3 +25,4 @@ This is the repo for Symbiote task.
     - for example:
             compute_alb_address = alb-1856156085.ap-southeast-2.elb.amazonaws.com
    
+5. The key used to login to EC2 instance is attached in my email, and you can use it to test MySQL connection
