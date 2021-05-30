@@ -47,6 +47,7 @@ resource "aws_db_instance" "postgres_database" {
   password                              = var.db_password
   deletion_protection                   = false
   skip_final_snapshot                   = true
+  enabled_cloudwatch_logs_exports       = ["audit", "error", "general", "slowquery"]
 
   tags = {
     Name = "RDS"
@@ -55,7 +56,7 @@ resource "aws_db_instance" "postgres_database" {
 
 
 resource "aws_cloudwatch_log_group" "rds_log_group" {
-  name              = "/rds/Symbiote"
+  name              = "/aws/rds/${aws_db_instance.postgres_database.identifier}"
   retention_in_days = "1"
 
   tags = {
