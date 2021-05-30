@@ -23,7 +23,6 @@ Constrains of the system:
         There is no log for EC2 instance since the agent is not installed
 
 Demo site is avaliable from output Application Load Balancer dns name: alb_address
-    for example: 
-        Outputs: 
+    for example:
             compute_alb_address = alb-1856156085.ap-southeast-2.elb.amazonaws.com
    
