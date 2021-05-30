@@ -4,13 +4,13 @@ variable module_vpc_cidr {
 }
 
 variable module_public_cidr {
-   type      = list
-   description = "public cidr"
+  type        = list
+  description = "public cidr"
 }
 
 variable module_private_cidr {
-    type     = list
-    description = "private cidr"
+  type        = list
+  description = "private cidr"
 }
 
 

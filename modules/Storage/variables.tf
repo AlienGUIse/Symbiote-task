@@ -5,30 +5,30 @@ variable storage_vpc_id {
 
 
 variable network_private_subnets {
-  type = list
+  type        = list
   description = "RDS Subnets"
 }
 
 
 variable db_instance_type {
-  type = string
+  type        = string
   description = "RDS instance type"
 }
 
 
 variable db_storage {
-  type = string
+  type        = string
   description = "RDS instance storage"
 }
 
 
 variable db_username {
-  type = string 
+  type        = string
   description = "RDS database username"
 }
 
 
 variable db_password {
-  type = string
+  type        = string
   description = "RDS database password"
 }

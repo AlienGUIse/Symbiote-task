@@ -1,5 +1,5 @@
 output "module_vpc_id" {
-  value       = aws_vpc.main_vpc.id
+  value = aws_vpc.main_vpc.id
 }
 
 output "module_public_sb" {
